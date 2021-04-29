@@ -7,7 +7,11 @@ export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  
+   @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+   }
 `;
 
 export const ImageContainer = styled.div`

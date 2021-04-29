@@ -8,7 +8,7 @@ const iconSize = 60;
 const iconContainerSize = 264;
 const imageContainerSize = 600;
 const iconContactFontSize = 24;
-const iconContainermargin = 10;
+const iconContainerMargin = 10;
 
 const iconContactColor = '#000000';
 
@@ -17,7 +17,12 @@ export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const InformationContainer = styled.div`
@@ -31,7 +36,7 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: ${iconContainermargin}px;
+  margin: ${iconContainerMargin}px;
 `;
 
 export const Icon = styled.span<IIcon>`

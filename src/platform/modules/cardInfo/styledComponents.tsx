@@ -32,7 +32,7 @@ export const Description = styled.span`
   ${textStyles};
 `;
 
-export const Information = styled.span`
+export const Information = styled.p`
   font-size: ${informationFontSize}px;
   padding: ${informationPadding}px;
   ${textStyles};
