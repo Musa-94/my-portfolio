@@ -1,6 +1,6 @@
 import React from 'react';
 import CardInfo from '../../modules/cardInfo/CardInfo';
-import { configSite } from '../../../config';
+import { contactsPageCard } from '../../configPortfolio';
 import Img from '../../../themes/assets/png/workTime.png'; //TODO MOVE TO THEMES IN OBJECT
 import telegramIcon from '../../../themes/assets/svg/telegram.svg';
 import instagramIcon from '../../../themes/assets/svg/instagram.svg';
@@ -15,11 +15,9 @@ import {
 } from './styledComponents';
 
 const ContactsPage = () => {
-    const { contactsPageCard } = configSite;
-
     return (
         <Wrapper>
-            <InformationContainer>
+            <InformationContainer data-at={'InformationContainer'}>
                 <CardInfo
                     titleText={contactsPageCard.titleText}
                     descriptionText={contactsPageCard.descriptionText}

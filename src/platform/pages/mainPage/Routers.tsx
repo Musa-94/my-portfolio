@@ -1,13 +1,14 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import {
     Route,
     Switch,
     HashRouter as Router,
 } from 'react-router-dom';
 import HomePage from '../homePage/HomePage';
-import AboutPage from '../aboutPage/AbotPage';
-import ContactsPage from '../contactsPage/ContactsPage';
 import KnowledgePage from '../knowledgePage/KnowledgePage';
+
+const AboutPage = lazy(() => import('../aboutPage/AboutPage'));
+const ContactsPage = lazy(() => import('../contactsPage/ContactsPage'));
 
 const Routers = () => {
     return (
