@@ -20,7 +20,7 @@ const CardInfo: React.FC<IProps> = props => {
     } = props;
 
     return (
-        <Wrapper>
+        <Wrapper data-at={'card-info'}>
             <Title children={titleText}/>
             {
                 descriptionText &&

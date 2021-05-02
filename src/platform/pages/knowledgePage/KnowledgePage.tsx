@@ -1,11 +1,9 @@
 import React from 'react';
 import { Wrapper } from './styledComponents';
 import CardInfo from '../../modules/cardInfo/CardInfo';
-import { configSite } from '../../../config';
+import { knowledgePageCards } from '../../configPortfolio';
 
 const KnowledgePage = () => {
-    const { knowledgePageCards } = configSite;
-
     return (
         <Wrapper>
             {

@@ -5,6 +5,8 @@ const wrapperPadding = 30;
 const logoTextFontSize = 24;
 const logoContainerSize = 50;
 
+const logoTextFontSizeMobileScreen = 17;
+
 const textColor = '#ffffff'; //TODO MOVE TO THEMES
 const logoTextColor = '#000000'; //
 const logoBackgroundColor = '#ffffff';
@@ -38,11 +40,6 @@ export const Logo = styled.div`
   background-color: ${logoBackgroundColor};
 `;
 
-export const LogoText = styled.span`
-  font-size: ${logoTextFontSize}px;
-  color: ${logoTextColor}px;
-`;
-
 export const NavBar = styled.nav`
   width: ${navBarWidth}px;
   display: flex;
@@ -62,5 +59,9 @@ export const Link = styled.a<ILink>`
   
   & :hover {
     opacity: 0.3%;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: ${logoTextFontSizeMobileScreen}px;
   }
 `;

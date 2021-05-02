@@ -10,6 +10,9 @@ const imageContainerSize = 600;
 const iconContactFontSize = 24;
 const iconContainerMargin = 10;
 
+const iconSizeMobileScreen = 30;
+const iconMarginRightMobileScreen = 15;
+
 const iconContactColor = '#000000';
 
 export const Wrapper = styled.div`
@@ -28,6 +31,10 @@ export const Wrapper = styled.div`
 export const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -37,13 +44,27 @@ export const IconContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: ${iconContainerMargin}px;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: ${iconSizeMobileScreen}px;
+    justify-content: normal;
+  }
 `;
 
 export const Icon = styled.span<IIcon>`
   width: ${iconSize}px;
   height: ${iconSize}px;
-  background: url("${props => props.img}");
+  background: url('${props => props.img}');
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 500px) {
+    width: ${iconSizeMobileScreen}px;
+    height: ${iconSizeMobileScreen}px;
+    background-size: contain;
+    background-position: center;
+    margin-right: ${iconMarginRightMobileScreen}px;
+  }
 `;
 
 export const IconContact = styled.span`
@@ -55,5 +76,7 @@ export const ImageContainer = styled.div`
   width: ${imageContainerSize}px;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  width: 100%;
+`;
 

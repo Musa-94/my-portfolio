@@ -65,7 +65,7 @@ const knowledgePageCards: Array<ICard> = [
 ];
 
 
-export const configSite = {
+export {
     homePageCards,
     aboutPageCard,
     contactsPageCard,

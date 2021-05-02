@@ -1,11 +1,9 @@
 import React from 'react';
 import { Wrapper } from './styledComponents';
-import { configSite } from '../../../config';
+import { homePageCards } from '../../configPortfolio';
 import CardInfo from '../../modules/cardInfo/CardInfo';
 
 const HomePage = () => {
-    const { homePageCards } = configSite;
-
     return (
         <Wrapper>
             {
@@ -18,7 +16,7 @@ const HomePage = () => {
                 )
             }
         </Wrapper>
-    )
-}
+    );
+};
 
 export default React.memo(HomePage);
