@@ -29,38 +29,11 @@ const contactsPageCard: ICard = {
 const knowledgePageCards: Array<ICard> = [
     {
         titleText: '<front-end>',
-        descriptionText: `
-            JavaScript
-            HTML/CSS
-            
-            React.js
-            Redux
-            Redux-Saga
-            React-Router-Dom
-            Styled-Component
-            Reselect
-            I18next
-            
-            TypeScript
-            Angular
-            RxJs
-            NgRx
-            
-            Webpack
-            Gulp
-        `,
+        descriptionText: 'JavaScript, HTML/CSS, React.js, Redux, Redux-Saga, React-Router-Dom, Styled-Component, Reselect, I18next, TypeScript, Angular, RxJs, NgRx,  Webpack,  Gulp'
     },
     {
         titleText: '<back-end>',
-        descriptionText: `
-            Node.js
-
-            Express.js
-            
-            MongoDB
-            
-            Nodemon
-        `,
+        descriptionText: 'Node.js, Express.js, MongoDB, Nodemon',
     },
 ];
 
