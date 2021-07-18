@@ -12,20 +12,20 @@ const Header = () => {
         <Wrapper>
             <LogoContainer>
                 <Logo>
-                    <Link href={'#/'}
-                          isLogo={true}
+                    <Link href='#/'
+                          isLogo
                           children='M'
                     />
                 </Logo>
             </LogoContainer>
             <NavBar>
-                <Link href={'#/about'}
+                <Link href='#/about'
                       children='About' //TODO TEXTS MOVE TO TRANSLATES
                 />
-                <Link href={'#/knowledge'}
+                <Link href='#/knowledge'
                       children='Knowledge'
                 />
-                <Link href={'#/contacts'}
+                <Link href='#/contacts'
                       children='Contacts'
                 />
             </NavBar>
