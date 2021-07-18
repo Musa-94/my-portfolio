@@ -17,18 +17,18 @@ import {
 const ContactsPage = () => {
     return (
         <Wrapper>
-            <InformationContainer data-at={'InformationContainer'}>
+            <InformationContainer data-at='InformationContainer'>
                 <CardInfo
                     titleText={contactsPageCard.titleText}
                     descriptionText={contactsPageCard.descriptionText}
                 />
                 <IconContainer>
                     <Icon img={telegramIcon}/>
-                    <IconContact children={'+994554330940'}/>
+                    <IconContact children='+994554330940'/>
                 </IconContainer>
                 <IconContainer>
                     <Icon img={instagramIcon}/>
-                    <IconContact children={'x.m.m.o@mail.ru'}/>
+                    <IconContact children='x.m.m.o@mail.ru'/>
                 </IconContainer>
             </InformationContainer>
             <ImageContainer>

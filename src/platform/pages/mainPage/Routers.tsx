@@ -15,10 +15,10 @@ const Routers = () => {
         <Router>
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
-                    <Route path={'/'} exact component={HomePage}/>
-                    <Route path={'/about'} component={AboutPage}/>
-                    <Route path={'/contacts'} component={ContactsPage}/>
-                    <Route path={'/knowledge'} component={KnowledgePage}/>
+                    <Route path='/' exact component={HomePage}/>
+                    <Route path='/about' component={AboutPage}/>
+                    <Route path='/contacts' component={ContactsPage}/>
+                    <Route path='/knowledge' component={KnowledgePage}/>
                 </Switch>
             </Suspense>
         </Router>
