@@ -40,7 +40,8 @@ export const Title = styled.span`
 
 export const Description = styled.span`
   font-size: ${descriptionFontSize}px;
-  padding: ${informationPadding}px;
+  display: flex;
+  justify-content: flex-start;
   ${textStyles};
 
   @media screen and (max-width: 500px) {
